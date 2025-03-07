@@ -9,7 +9,8 @@ pipeline {
         mvn clean install
       }
     }
-    stage('Front-end') {
+//My change
+//     stage('Front-end') {
       agent {
         docker { image 'node:16-alpine' }
       }
